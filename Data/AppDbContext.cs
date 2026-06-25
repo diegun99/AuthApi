@@ -10,6 +10,11 @@ public class AppDbContext : IdentityDbContext<ApplicationUser>
 
 	protected override void OnModelCreating(ModelBuilder builder)
 	{
-		base.onModelCreating(builder);
+		base.OnModelCreating(builder);
+        // Personalizar nombres de tablas para PostgreSQL (mejor en minúsculas)
+        foreach (var entity in builder.Model.GetEntityTypes())
+        {
+            entity.SetTableName(entity.GetTableName()?.ToLowerInvariant());
+        }
 	}
 }
