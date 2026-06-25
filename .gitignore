@@ -1,0 +1,70 @@
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Visual Studio files
+.vs/
+*.VC.db
+
+# Rider files
+.idea/
+*.sln.iml
+
+# NuGet packages
+*.nupkg
+packages/
+
+# ASP.NET temporary files
+*.dbmdl
+*.bak
+*.log
+
+# Publish output
+publish/
+*.publishsettings
+
+# Environment and configuration
+appsettings.*.json
+
+# JetBrains Rider
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# DotCover
+*.dotCover
+
+# StyleCop
+StyleCopReport.xml
+
+# Backup & cache
+*~
+*.tmp
+*.temp
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Logs
+*.log
+
+# Generated files
+AuthApi.csproj.nuget.dgspec.json
+AuthApi.csproj.nuget.g.props
+AuthApi.csproj.nuget.g.targets
+project.assets.json
