@@ -123,7 +123,11 @@ app.UseAuthorization();
 // ─── ENDPOINTS ──────────────────────────────────────────────
 // app.MapAuthEndpoints(); // Ver siguiente paso
 
-
+// Seed de datos
+using (var scope = app.Services.CreateScope())
+{
+    await SeedData.Initialize(scope.ServiceProvider);
+}
 app.Run();
 
 // var builder = WebApplication.CreateBuilder(args);
